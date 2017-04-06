@@ -27,20 +27,27 @@ var HTMLbioPic = '<img src="./images/yixi.jpg" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message"></span>';
 
 var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
-var HTMLskills = '<li class="flex-item"><span class="white-text">Java,C,Python,HTML/CSS,JavaScript,jQuery</span></li>';
+var HTMLskills = '<li class="flex-item"><span class="white-text">Solid back-end project experience, proficient with Java, C and MySQL</span></li>';
+var HTMLskills2 = '<li class="flex-item"><span class="white-text">Interested in front-end knowledge, familiar with jQuery, HTML/CSS and JavaScript</span></li>';
+var HTMLskills3 = '<li class="flex-item"><span class="white-text">Undergraduate studying electrical engineer with an emphasis on embedded systems and machine learning</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<a href="#">%data%';
-var HTMLworkTitle = ' - %data%</a>';
-var HTMLworkDates = '<div class="date-text">%data%</div>';
-var HTMLworkLocation = '<div class="location-text">%data%</div>';
-var HTMLworkDescription = '<p><br>%data%</p>';
+var HTMLworkEmployer = '<a href="#">Laboratory Assistant';
+var HTMLworkTitle = ' - Texas Instrument Laboratory - UESTC</a>';
+var HTMLworkDates = '<div class="date-text">09/01/2013-06/30/2015</div>';
+var HTMLworkLocation = '<div class="location-text">Chengdu</div>';
+var HTMLworkDescription = '<p><br>Organized TI Electronic Design Contest</p><p>Assisted managing publicity of Lab work</p>';
 
-var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
-var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<p><br>%data%</p>';
+var HTMLprojectStart = '<div id ="project1" class="project-entry"></div>';
+var HTMLprojectTitle = '<a href="#">Graduate School Application Tracking System Interface</a>';
+var HTMLprojectDates = '<div class="date-text">Jan. 2017 - Mar. 2017</div>';
+var HTMLprojectDescription = '<p><br>Built a website that users allows to create accounts to organize the application process for graduate school</p><p>Programmed with HTML,CSS and Javascript</p>';
 var HTMLprojectImage = '<img src="%data%">';
+
+var HTMLproject2Start = '<div id ="project2" class="project-entry"></div>';
+var HTMLproject2Title = '<a href="#">CAESAR Academic System</a>';
+var HTMLproject2Dates = '<div class="date-text">Nov. 2016 - Dec. 2016</div>';
+var HTMLproject2Description = '<p><br>Develop a database client that implements the lines of Northwestern CAESAR academic system</p><p>Implemented C API to MySQL database</p>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
@@ -239,11 +246,11 @@ Uncomment the code below when you're ready to implement a Google Map!
 */
 
 // Calls the initializeMap() function when the page loads
-//window.addEventListener('load', initializeMap);
+window.addEventListener('load', initializeMap);
 
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds
-//window.addEventListener('resize', function(e) {
+window.addEventListener('resize', function(e) {
   //Make sure the map bounds get updated on page resize
-//  map.fitBounds(mapBounds);
-//});
+  map.fitBounds(mapBounds);
+});
