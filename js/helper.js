@@ -45,16 +45,28 @@ var HTMLprojectDescription = '<p><br>Built a website that users allows to create
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLproject2Start = '<div id ="project2" class="project-entry"></div>';
-var HTMLproject2Title = '<a href="#">CAESAR Academic System</a>';
-var HTMLproject2Dates = '<div class="date-text">Nov. 2016 - Dec. 2016</div>';
-var HTMLproject2Description = '<p><br>Develop a database client that implements the lines of Northwestern CAESAR academic system</p><p>Implemented C API to MySQL database</p>';
+var HTMLproject2Title = '<a href="#">Web camera</a>';
+var HTMLproject2Dates = '<div class="date-text">Jan. 2016 - Mar. 2017</div>';
+var HTMLproject2Description = '<p><br>Construct a wireless camera and website to show the real-time picture</p><p>Involve a printed circuit design using PCB CAD software, surface mount soldering, MCU programming, CAD design for 3D printing, and web design</p>';
 
-var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
-var HTMLschoolDates = '<div class="date-text">%data%</div>';
-var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
+var HTMLproject3Start = '<div id ="project3" class="project-entry"></div>';
+var HTMLproject3Title = '<a href="#">CAESAR Academic System</a>';
+var HTMLproject3Dates = '<div class="date-text">Nov. 2016 - Dec. 2016</div>';
+var HTMLproject3Description = '<p><br>Develop a database client that implements the lines of Northwestern CAESAR academic system</p><p>Implemented C API to MySQL database</p>';
+
+var HTMLschool1Start = '<div id="education1" class="education-entry"></div>';
+var HTMLschool1Name = '<a href="http://www.northwestern.edu/">Northwestern University';
+var HTMLschool1Degree = ' -- Master</a>';
+var HTMLschool1Dates = '<div class="date-text">Dec.2017</div>';
+var HTMLschool1Location = '<div class="location-text">Evanston, Illinois</div>';
+var HTMLschool1Major = '<em><br>Major: Computer Engineering</em>';
+
+var HTMLschool2Start = '<div id="education2" class="education-entry"></div>';
+var HTMLschool2Name = '<a href="http://en.uestc.edu.cn/">University of Electronic Science and Technology of China';
+var HTMLschool2Degree = ' -- Bachelor</a>';
+var HTMLschool2Dates = '<div class="date-text">Jun.2016</div>';
+var HTMLschool2Location = '<div class="location-text">Chengdu, Sichuan</div>';
+var HTMLschool2Major = '<em><br>Major: Electronic Engineering</em>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = '<a href="#">%data%';
@@ -94,6 +106,7 @@ function logClicks(x,y) {
 
 $(document).click(function(loc) {
   // your code goes here!
+  logClicks(loc.pageX,loc.pageY);
 });
 
 
@@ -148,9 +161,6 @@ function initializeMap() {
     // the locations array. Note that forEach is used for array iteration
     // as described in the Udacity FEND Style Guide:
     // https://udacity.github.io/frontend-nanodegree-styleguide/javascript.html#for-in-loop
-    work.jobs.forEach(function(job){
-      locations.push(job.location);
-    });
 
     return locations;
   }
